@@ -1,10 +1,10 @@
 module Mail
-  class GmailXoauth < IMAP
+  class XOauthIMAP < IMAP
     class MissingAuthInfo < KeyError ; end
 
     def initialize(values)
-      values.fetch(:address) { fail MissingAuthInfo }
-      values.fetch(:access_token) { fail MissingAuthInfo }
+      fail MissingAuthInfo unless values[:address]
+      fail MissingAuthInfo unless values[:access_token]
       super values
     end
 
