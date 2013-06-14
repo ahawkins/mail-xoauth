@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Mail::Xoauth::VERSION
   spec.authors       = ["ahawkins"]
   spec.email         = ["me@broadcastingadam.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Gmail OAuth IMAP & SMTP connections for the Mail gem}
+  spec.summary       = %q{}
+  spec.homepage      = "https://github.com/ahawkins/mail-xoauth"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
